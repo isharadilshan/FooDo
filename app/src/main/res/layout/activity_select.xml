@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_login"
+    tools:context=".SelectActivity"
+    android:background="@drawable/backg">
+
+    <Button
+        android:id="@+id/deliverButton"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/deliver"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="180dp"/>
+
+    <Button
+        android:id="@+id/donatorButton"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/donator"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="300dp"/>
+
+    <Button
+        android:id="@+id/consumerButton"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="@string/consumer"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginRight="25dp"/>
+
+</RelativeLayout>

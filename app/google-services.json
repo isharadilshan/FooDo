@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "986534763087",
+    "firebase_url": "https://foodo-438f0.firebaseio.com",
+    "project_id": "foodo-438f0",
+    "storage_bucket": "foodo-438f0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986534763087:android:5a89fbefae12c3ff",
+        "android_client_info": {
+          "package_name": "netbit.dev.foodo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986534763087-vmrtfq586oqeme14bkjncvstcmo2aaob.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "netbit.dev.foodo",
+            "certificate_hash": "c1f9bd232e523de099f0792addf06d4d71cfda3d"
+          }
+        },
+        {
+          "client_id": "986534763087-h673ogg296j7kmjq6runpa7qa0ogjj94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkhJxszjks5qExJtzEs21ELNLmvVKBUGs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986534763087-h673ogg296j7kmjq6runpa7qa0ogjj94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986534763087:android:4fa14bf287a7378e",
+        "android_client_info": {
+          "package_name": "netbit.develop.food"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "986534763087-qshvj9g813p287br9h0b2oquaoad63r3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "netbit.develop.food",
+            "certificate_hash": "c1f9bd232e523de099f0792addf06d4d71cfda3d"
+          }
+        },
+        {
+          "client_id": "986534763087-h673ogg296j7kmjq6runpa7qa0ogjj94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkhJxszjks5qExJtzEs21ELNLmvVKBUGs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "986534763087-h673ogg296j7kmjq6runpa7qa0ogjj94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

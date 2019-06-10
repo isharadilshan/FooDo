@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowItemActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp">
+
+                <ImageView
+                    android:id="@+id/food_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/fooditem"
+                    android:contentDescription="@string/foodItemImage" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/food_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_regular"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/ic_title"/>
+
+            <TextView
+                android:id="@+id/food_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_regular"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/ic_description"/>
+
+            <TextView
+                android:id="@+id/food_pickupDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_regular"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/ic_local_shipping"/>
+
+            <TextView
+                android:id="@+id/food_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_regular"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/ic_announcement"/>
+
+            <TextView
+                android:id="@+id/food_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_regular"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/ic_location"/>
+
+            <TextView
+                android:id="@+id/food_addedTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_regular"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:textStyle="bold"
+                android:drawableStart="@drawable/ic_access_time"/>
+
+            <Button
+                android:id="@+id/buttonEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/edit"
+                android:background="@color/colorHighlight"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/white"/>
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delete"
+                android:background="@color/colorHighlight"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="40dp"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

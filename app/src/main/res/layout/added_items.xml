@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#e0e0e0"
+        android:id="@+id/menu_added_items">
+        <!--this values should be changed when presenting according to screen size-->
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentStart="true">
+
+            <ImageView
+                android:id="@+id/item_image"
+                android:scaleType="centerCrop"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:contentDescription="@string/food_item_description"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+
+        <!--this values should be changed when presenting according to screen size-->
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/item_title"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:text="@string/item_title"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" />
+
+            <TextView
+                android:id="@+id/item_description"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:text="@string/item_description"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"/>
+
+            <TextView
+                android:id="@+id/item_pickupDetails"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:text="@string/item_pickupDetails"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"/>
+
+            <TextView
+                android:id="@+id/item_category"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:text="@string/item_category"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"/>
+
+            <TextView
+                android:id="@+id/item_location"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:text="@string/item_uploadLocation"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"/>
+
+            <TextView
+                android:id="@+id/item_expireTime"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:text="@string/item_expireTime"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"/>
+
+            <TextView
+                android:id="@+id/item_uploadTime"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:text="@string/item_uploadTime"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"/>
+
+            <TextView
+                android:id="@+id/item_likes"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:text="@string/item_likes"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
