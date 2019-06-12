@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="bottom" type="id">@+id/bottom</item>
+    <item name="bar_layout" type="id">@+id/bar_layout</item>
+    <item name="btn_send" type="id">@+id/btn_send</item>
+</resources>

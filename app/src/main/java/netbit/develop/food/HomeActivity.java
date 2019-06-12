@@ -279,7 +279,7 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
-            startActivity(new Intent(this,ChatActivity.class));
+            startActivity(new Intent(this,MessageActivity.class));
 
         } else if (id == R.id.nav_send) {
             startActivity(new Intent(this,LocationActivity.class));
