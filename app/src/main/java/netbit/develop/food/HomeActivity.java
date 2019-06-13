@@ -277,6 +277,7 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
+            startActivity(new Intent(this,PickerActivity.class));
 
         } else if (id == R.id.nav_share) {
             startActivity(new Intent(this,MessageActivity.class));

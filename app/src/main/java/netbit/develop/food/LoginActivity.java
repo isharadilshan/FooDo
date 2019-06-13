@@ -90,7 +90,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 //                updateUI();
             } catch (ApiException e) {
                 // Google Sign In failed, update UI appropriately
-                Toast.makeText(getApplicationContext(),"Login with Google Unsuccessfull",Toast.LENGTH_SHORT).show();
+
+
             }
         }
     }

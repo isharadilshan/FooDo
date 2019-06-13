@@ -26,11 +26,16 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
@@ -50,6 +55,7 @@ public class ProfileActivity extends AppCompatActivity implements LocationListen
     StorageReference mStorageRef;
     FirebaseAuth mAuth;
 //    TextView verifyView;
+    DatabaseReference reference;
     LocationManager locationManager;
 
     @Override
@@ -152,6 +158,8 @@ public class ProfileActivity extends AppCompatActivity implements LocationListen
                                     user.put("currentLongitude", longitude);
                                     user.put("profileImageUrl", url);
 
+                                    realtimeDataAdd(name,url);
+
                                     db.collection("UserProfiles").document(FirebaseAuth.getInstance().getCurrentUser().getUid())
                                             .set(user)
                                             .addOnSuccessListener(new OnSuccessListener<Void>() {
@@ -181,6 +189,30 @@ public class ProfileActivity extends AppCompatActivity implements LocationListen
                     });
                 } else {
                     Toast.makeText(ProfileActivity.this, "No File Selected", Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+    }
+
+    private void realtimeDataAdd(String username, String imageUrl){
+        FirebaseUser firebaseUser = mAuth.getCurrentUser();
+        assert firebaseUser != null;
+        String userId = firebaseUser.getUid();
+
+        reference = FirebaseDatabase.getInstance().getReference("Users").child(userId);
+
+        HashMap<String, String> hashMap = new HashMap<>();
+        hashMap.put("id", userId);
+        hashMap.put("username", username);
+        hashMap.put("imageURL", imageUrl);
+        hashMap.put("status", "offline");
+        hashMap.put("search", username.toLowerCase());
+
+        reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()){
+                    Toast.makeText(getApplicationContext(),"Successfully added data to real time database",Toast.LENGTH_SHORT).show();
                 }
             }
         });
